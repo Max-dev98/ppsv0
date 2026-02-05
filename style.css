@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #575656;
+}
+
+/* canvas do jogo */
+#game {
+  border: 3px solid #111;
+  image-rendering: pixelated;
+}
+
+#game {
+  max-width: 100%;
+  height: auto;
+}
