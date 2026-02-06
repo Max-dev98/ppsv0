@@ -1,30 +1,27 @@
-import { Player } from '../entities/player';
-import { Bullet } from '../entities/bullet';
-import { MouseInput } from './mouseInput';
-import { Input } from './inputSytem';
-import { Enemy } from '../entities/enemy';
+import { Player } from '../entities/player.js';
+import { Bullet } from '../entities/bullet.js';
+import { MouseInput } from './mouseInput.js';
+import { Input } from './inputSytem.js';
+import { Enemy } from '../entities/enemy.js';
 export class Game {
-    ctx;
-    lastTime = 0;
-    player = new Player();
-    entities = [];
-    isGameOver = false;
-    candy = 0; // Pontos do jogador
-    currentWave = 1; // Onda atual
-    enemiesPerWave = 3; // Inimigos por onda
-    enemiesSpawned = 0; // Quantos já nasceram nessa wave
-    enemyBaseLife = 5;
-    // controla spawn espaçado
-    spawnTimer = 0;
-    spawnDelay = 0.6;
-    // ===== ARMA DO PLAYER =====
-    maxAmmo = 12;
-    ammo = this.maxAmmo;
-    isReloading = false;
-    reloadTimer = 0;
-    reloadTime = 1.5; // segundos
     constructor(canvas) {
         this.ctx = canvas.getContext('2d');
+        this.lastTime = 0;
+        this.player = new Player();
+        this.entities = [];
+        this.isGameOver = false;
+        this.candy = 0;
+        this.currentWave = 1;
+        this.enemiesPerWave = 3;
+        this.enemiesSpawned = 0;
+        this.enemyBaseLife = 5;
+        this.spawnTimer = 0;
+        this.spawnDelay = 0.6;
+        this.maxAmmo = 12;
+        this.ammo = this.maxAmmo;
+        this.isReloading = false;
+        this.reloadTimer = 0;
+        this.reloadTime = 1.5;
         this.ctx.imageSmoothingEnabled = false;
         Input.init();
         MouseInput.init(canvas);

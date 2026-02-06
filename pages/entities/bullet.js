@@ -1,14 +1,12 @@
-import { Entity } from './entity';
+import { Entity } from './entity.js';
 export class Bullet extends Entity {
-    speed = 400;
-    vx;
-    vy;
-    size = 4;
-    alive = true;
     constructor(x, y, dx, dy) {
         super();
         this.x = x;
         this.y = y;
+        this.speed = 400;
+        this.size = 4;
+        this.alive = true;
         const length = Math.hypot(dx, dy);
         this.vx = dx / length;
         this.vy = dy / length;

@@ -1,6 +1,6 @@
 import '../style.css';
-import { Game } from './core/game';
-import { Input } from './core/inputSytem';
+import { Game } from './core/game.js';
+import { Input } from './core/inputSytem.js';
 const canvas = document.getElementById('game');
 canvas.width = 800;
 canvas.height = 400;

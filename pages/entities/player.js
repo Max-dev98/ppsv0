@@ -1,4 +1,4 @@
-import { Entity } from './entity';
+import { Entity } from './entity.js';
 export const PlayerState = {
     Idle: 'idle',
     Run: 'run',

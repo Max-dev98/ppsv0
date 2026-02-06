@@ -1,4 +1,4 @@
-import { Entity } from './entity';
+import { Entity } from './entity.js';
 export class Enemy extends Entity {
     width = 8 * 8;
     height = 8 * 8;

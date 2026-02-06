@@ -1,5 +1,4 @@
 export class Sprite {
-    image;
     constructor(src) {
         this.image = new Image();
         // debug: confirma carregamento
