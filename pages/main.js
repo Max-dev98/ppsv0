@@ -1,4 +1,4 @@
-import './style.css';
+import '../style.css';
 import { Game } from './core/game';
 import { Input } from './core/inputSytem';
 const canvas = document.getElementById('game');
