@@ -32,9 +32,9 @@ export class Player extends Entity {
         super();
         this.x = 100;
         this.y = 300;
-        this.sprites[PlayerState.Idle].src = '../../public/sprites/pumpkinoIdle.png';
-        this.sprites[PlayerState.Run].src = '../../public/sprites/pumpkinoRun.png';
-        this.sprites[PlayerState.Jump].src = '../../public/sprites/pumpkinoJump.png';
+        this.sprites[PlayerState.Idle].src = './public/sprites/pumpkinoIdle.png';
+        this.sprites[PlayerState.Run].src = './public/sprites/pumpkinoRun.png';
+        this.sprites[PlayerState.Jump].src = './public/sprites/pumpkinoJump.png';
     }
     // 👇 INPUT VEM DE FORA AGORA
     applyInput(input, dt) {

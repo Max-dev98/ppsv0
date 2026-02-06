@@ -17,7 +17,7 @@ export class Enemy extends Entity {
         super();
         this.x = x;
         this.y = y;
-        this.image.src = '../../public/sprites/enemyGhost.png';
+        this.image.src = './public/sprites/enemyGhost.png';
     }
     update(dt) {
         // movimento simples (vai pra esquerda)
